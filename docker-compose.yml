@@ -1,6 +1,7 @@
 version: "3"
 
 services:
-  sample:
+  node:
     build: .
-    image: hello:tag
+    ports: ["3000:3000"]
+    command: node index.js
