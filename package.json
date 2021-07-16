@@ -1,5 +1,5 @@
 {
-  "name": "hello-world",
+  "name": "glowing-lamp",
   "version": "1.0.0",
   "description": "Creating a Dockerfile to run your applications from a container.",
   "main": "index.js",
