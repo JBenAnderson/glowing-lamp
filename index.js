@@ -2,9 +2,14 @@ var express = require("express");
 var app = express();
 
 app.get("/", function (req, res) {
-  console.log(new Date().toLocaleString());
-  res.send(new Date().toLocaleString());
+  console.log("Hello World");
+  res.send("Hello World");
 });
+
+// app.get("/", function (req, res) {
+//   console.log(new Date().toLocaleString());
+//   res.send(new Date().toLocaleString());
+// });
 
 var port = 3000;
 app.listen(port, function () {
