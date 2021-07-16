@@ -30,6 +30,17 @@ app.get("/createMongo", function (req, res) {
   });
 });
 
+app.get("/readMongo", function (req, res) {
+  var results = null;
+  var collection = db
+    .collection("customers")
+    .find()
+    .toArray(function (err, docs) {
+      console.dir(docs);
+      res.send(docs);
+    });
+});
+
 // Simple datestamp response for functionality testing
 
 // app.get("/", function (req, res) {
