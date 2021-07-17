@@ -42,7 +42,6 @@ app.get("/readMongo", function (req, res) {
 });
 
 // Simple datestamp response for functionality testing
-
 // app.get("/", function (req, res) {
 //   console.log(new Date().toLocaleString());
 //   res.send(new Date().toLocaleString());
